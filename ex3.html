@@ -45,22 +45,35 @@
       }
     ">
     -->
-
-  <input type="button" name="" value="night" onclick="
+    <input type="button" name="" value="night" onclick="
     var target = document.querySelector('body');
     if(this.value === 'night'){
       target.style.backgroundColor='black';
       target.style.color='white';
       this.value='day';
+
+      var alist = document.querySelectorAll('a');
+      var i =0;
+      while(i<alist.length){
+        console.log(alist[i]);
+        alist[i].style='powderblue';
+        i=i+1;
+      }
     }
     else{
       target.style.backgroundColor='white';
       target.style.color='black';
       this.value='night';
 
+      var alist = document.querySelectorAll('a');
+      var i =0;
+      while(i<alist.length){
+        console.log(alist[i]);
+        alist[i].style='blue';
+        i=i+1;
     }
 
-  ">
+    ">
 
     <p>
       <span class="first" id="second">JavaScript</span> (/ˈdʒɑːvəˌskrɪpt/),[7] often abbreviated as JS, is a high-level, interpreted programming language. It is a language which is also characterized as dynamic, weakly typed, prototype-based and multi-paradigm.
