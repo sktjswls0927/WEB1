@@ -8,12 +8,14 @@ var body = {
 }
 var link = {
   setColor: function(color){
-    var alist =  document.querySelectorAll('a');
-    var i =0;
-    while(i<alist.length){
-      alist[i].style.color='yellow';
-      i = i+1;
-    }
+
+    //var alist =  document.querySelectorAll('a');
+    //var i =0;
+    //while(i<alist.length){
+      //alist[i].style.color='yellow';
+      //i = i+1;
+    //}
+    $('a').css('color',color);
   }
 }
 function method(self){
